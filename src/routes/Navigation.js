@@ -1,7 +1,7 @@
 import { Icon } from '@material-ui/core'
 import React, { useEffect, useContext } from 'react'
 import GooglePlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-google-places-autocomplete'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Map from '../components/Map'
 import { AppContext } from '../App'
 
