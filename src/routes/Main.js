@@ -25,13 +25,8 @@ const Main = () => {
     return (
         <div className="bg-white h-full max-w-lg m-auto">
       
-        <div className="p-5 border-b">
-          <img
-            src="https://links.papareact.com/gzs"
-            width={100}
-            height={100}
-            alt="Logo"
-          />
+        <div className="p-5 border-b pacifico text-3xl">
+          Moober
         </div>
         
           <GooglePlacesAutocomplete

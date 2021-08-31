@@ -7,13 +7,13 @@ const options = [
   {
     id: "123",
     title: "Get a ride",
-    image: "https://links.papareact.com/3pn",
+    image: "0",
     linkTo: "/navigation",
   },
   {
     id: "456",
     title: "Order food",
-    image: "https://links.papareact.com/28w",
+    image: '1',
     linkTo: "/food",
   },
 ];
@@ -32,13 +32,8 @@ const NavOptions = () => {
               cursor-pointer hover:scale-105 hover:bg-gray-300 active:scale-100 active:bg-gray-100"
             }
           >
-            <img
-              alt={item.title}
-              className="outline-black"
-              height={120}
-              width={120}
-              src={item.image}
-            />
+            {item.image === '0' ? (
+            <div className="text-5xl">&#x1F404;</div>) : (<div className="text-5xl">&#x1F372;</div>)}
 
             <div className="flex flex-col items-center">
               <div className="mt-2 text-lg font-bold">{item.title}</div>
